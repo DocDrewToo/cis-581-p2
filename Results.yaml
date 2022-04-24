@@ -1,0 +1,357 @@
+# ===========================================================
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Layers: [1024 10]  -- Iterations: 100   -- Step Size:  0.1
+ans = 0.098019
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Layers: [1024 10]  -- Iterations: 100   -- Step Size:  1
+ans = 0.1011
+
+Layers: [1024 10]  -- Iterations: 100   -- Step Size:  10
+ans = 0.1015
+
+Layers: [1024 10]  -- Iterations: 100   -- Step Size:  100
+ans = 0.1005
+# ===========================================================
+
+Layers: [1024 10]  -- Iterations: 200   -- Step Size:  0.1
+ans = 0.068636
+
+Layers: [1024 10]  -- Iterations: 200   -- Step Size:  1
+ans = 0.068681
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Layers: [1024 10]  -- Iterations: 200   -- Step Size:  10
+ans = 0.065963
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Layers: [1024 10]  -- Iterations: 200   -- Step Size:  100
+ans = 0.068413
+
+# ===========================================================
+
+Layers: [1024 10]  -- Iterations: 400   -- Step Size:  0.1
+ans = 0.046812
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Layers: [1024 10]  -- Iterations: 400   -- Step Size:  1
+ans = 0.045638
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Layers: [1024 10]  -- Iterations: 400   -- Step Size:  10
+ans = 0.049716
+
+Layers: [1024 10]  -- Iterations: 400   -- Step Size:  100
+ans = 0.047843
+
+# ===========================================================
+
+Layers: [1024 10]  -- Iterations: 800   -- Step Size:  0.1
+ans = 0.033874
+
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+Layers: [1024 10]  -- Iterations: 800   -- Step Size:  1
+ans = 0.034061
+!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
+Layers: [1024 10]  -- Iterations: 800   -- Step Size:  10
+ans = 0.035010
+
+Layers: [1024 10]  -- Iterations: 800   -- Step Size:  100
+ans = 0.034667# ===========================================================
+
+Layers: [1024 512 10]  -- Iterations: 100   -- Step Size:  0.1
+!!!!!!! ans = 0.058016
+
+Layers: [1024 512 10]  -- Iterations: 100   -- Step Size:  1
+ans = 0.057341
+
+Layers: [1024 512 10]  -- Iterations: 100   -- Step Size:  10
+ans = 0.061463
+
+Layers: [1024 512 10]  -- Iterations: 100   -- Step Size:  100
+ans = 0.059394
+
+Layers: [1024 512 10]  -- Iterations: 200   -- Step Size:  0.1
+ans = 0.039991
+
+Layers: [1024 512 10]  -- Iterations: 200   -- Step Size:  1
+ans = 0.042393
+
+Layers: [1024 512 10]  -- Iterations: 200   -- Step Size:  10
+!!!!!!! ans = 0.038747
+
+Layers: [1024 512 10]  -- Iterations: 200   -- Step Size:  100
+ans = 0.040388
+
+Layers: [1024 512 10]  -- Iterations: 400   -- Step Size:  0.1
+ans = 0.029543
+
+Layers: [1024 512 10]  -- Iterations: 400   -- Step Size:  1
+ans = 0.030731
+
+Layers: [1024 512 10]  -- Iterations: 400   -- Step Size:  10
+ans = 0.031398
+
+Layers: [1024 512 10]  -- Iterations: 400   -- Step Size:  100
+!!!!!!! ans = 0.029319
+
+Layers: [1024 512 10]  -- Iterations: 800   -- Step Size:  0.1
+ans = 0.024945
+
+Layers: [1024 512 10]  -- Iterations: 800   -- Step Size:  1
+ans = 0.025298
+
+Layers: [1024 512 10]  -- Iterations: 800   -- Step Size:  10
+ans = 0.025413
+
+Layers: [1024 512 10]  -- Iterations: 800   -- Step Size:  100
+!!!!!!! ans = 0.023750
+
+# ===========================================================
+
+Layers: [1024 128 10]  -- Iterations: 100   -- Step Size:  0.1
+ans = 0.069397
+
+Layers: [1024 128 10]  -- Iterations: 100   -- Step Size:  1
+!!!!!!! ans = 0.067177
+
+Layers: [1024 128 10]  -- Iterations: 100   -- Step Size:  10
+ans = 0.069872
+
+Layers: [1024 128 10]  -- Iterations: 100   -- Step Size:  100
+ans = 0.067877
+
+Layers: [1024 128 10]  -- Iterations: 200   -- Step Size:  0.1
+!!!!!!! ans = 0.046873
+
+Layers: [1024 128 10]  -- Iterations: 200   -- Step Size:  1
+ans = 0.048586
+
+Layers: [1024 128 10]  -- Iterations: 200   -- Step Size:  10
+ans = 0.049154
+
+Layers: [1024 128 10]  -- Iterations: 200   -- Step Size:  100
+ans = 0.048363
+
+Layers: [1024 128 10]  -- Iterations: 400   -- Step Size:  0.1
+ans = 0.035663
+
+Layers: [1024 128 10]  -- Iterations: 400   -- Step Size:  1
+ans = 0.033780
+
+Layers: [1024 128 10]  -- Iterations: 400   -- Step Size:  10
+!!!!!!! ans = 0.033490
+
+Layers: [1024 128 10]  -- Iterations: 400   -- Step Size:  100
+ans = 0.034413
+
+Layers: [1024 128 10]  -- Iterations: 800   -- Step Size:  0.1
+ans = 0.025417
+
+Layers: [1024 128 10]  -- Iterations: 800   -- Step Size:  1
+!!!!!!! ans = 0.025147
+
+Layers: [1024 128 10]  -- Iterations: 800   -- Step Size:  10
+ans = 0.026243
+
+Layers: [1024 128 10]  -- Iterations: 800   -- Step Size:  100
+ans = 0.025328
+
+# ===========================================================
+
+Layers: [1024 4 10]  -- Iterations: 100   -- Step Size:  0.1
+ans = 0.099432
+
+Layers: [1024 4 10]  -- Iterations: 100   -- Step Size:  1
+ans = 0.1012
+
+Layers: [1024 4 10]  -- Iterations: 100   -- Step Size:  10
+ans = 0.1029
+
+Layers: [1024 4 10]  -- Iterations: 100   -- Step Size:  100
+!!!!!!! ans = 0.097858
+
+Layers: [1024 4 10]  -- Iterations: 200   -- Step Size:  0.1
+ans = 0.090655
+
+Layers: [1024 4 10]  -- Iterations: 200   -- Step Size:  1
+ans = 0.090425
+
+Layers: [1024 4 10]  -- Iterations: 200   -- Step Size:  10
+ans = 0.090213
+
+Layers: [1024 4 10]  -- Iterations: 200   -- Step Size:  100
+!!!!!!! ans = 0.090071
+
+Layers: [1024 4 10]  -- Iterations: 400   -- Step Size:  0.1
+!!!!!!! ans = 0.087558
+
+Layers: [1024 4 10]  -- Iterations: 400   -- Step Size:  1
+ans = 0.088489
+
+Layers: [1024 4 10]  -- Iterations: 400   -- Step Size:  10
+ans = 0.089223
+
+Layers: [1024 4 10]  -- Iterations: 400   -- Step Size:  100
+ans = 0.089885
+
+Layers: [1024 4 10]  -- Iterations: 800   -- Step Size:  0.1
+!!!!!!! ans = 0.087165
+
+Layers: [1024 4 10]  -- Iterations: 800   -- Step Size:  1
+ans = 0.089048
+
+Layers: [1024 4 10]  -- Iterations: 800   -- Step Size:  10
+ans = 0.088008
+
+Layers: [1024 4 10]  -- Iterations: 800   -- Step Size:  100
+ans = 0.088369
+
+
+
+Layers: [1024 512 64 10]  -- Iterations: 100   -- Step Size:  0.1
+
+ans = 0.060928
+
+Layers: [1024 512 64 10]  -- Iterations: 100   -- Step Size:  1
+
+ans = 0.059170
+
+Layers: [1024 512 64 10]  -- Iterations: 100   -- Step Size:  10ans = 0.059490
+
+Layers: [1024 512 64 10]  -- Iterations: 100   -- Step Size:  100
+ans = 0.064135
+
+Layers: [1024 512 64 10]  -- Iterations: 200   -- Step Size:  0.1
+ans = 0.048017
+
+Layers: [1024 512 64 10]  -- Iterations: 200   -- Step Size:  1
+ans = 0.045802
+
+Layers: [1024 512 64 10]  -- Iterations: 200   -- Step Size:  10
+ans = 0.046233
+
+Layers: [1024 512 64 10]  -- Iterations: 200   -- Step Size:  100
+ans = 0.046109
+
+Layers: [1024 512 64 10]  -- Iterations: 400   -- Step Size:  0.1
+ans = 0.033270
+
+Layers: [1024 512 64 10]  -- Iterations: 400   -- Step Size:  1
+ans = 0.036893
+
+Layers: [1024 512 64 10]  -- Iterations: 400   -- Step Size:  10
+ans = 0.035185
+
+Layers: [1024 512 64 10]  -- Iterations: 400   -- Step Size:  100
+ans = 0.036270
+
+Layers: [1024 512 64 10]  -- Iterations: 800   -- Step Size:  0.1
+ans = 0.027598
+
+Layers: [1024 512 64 10]  -- Iterations: 800   -- Step Size:  1
+ans = 0.029055
+
+Layers: [1024 512 64 10]  -- Iterations: 800   -- Step Size:  10
+ans = 0.026767
+
+Layers: [1024 512 64 10]  -- Iterations: 800   -- Step Size:  100
+ans = 0.026612
+
+Layers: [1024 256 32 10]  -- Iterations: 100   -- Step Size:  0.1
+ans = 0.078640
+
+Layers: [1024 256 32 10]  -- Iterations: 100   -- Step Size:  1
+ans = 0.079018
+
+Layers: [1024 256 32 10]  -- Iterations: 100   -- Step Size:  10
+ans = 0.079158
+
+Layers: [1024 256 32 10]  -- Iterations: 100   -- Step Size:  100
+ans = 0.079144
+
+Layers: [1024 256 32 10]  -- Iterations: 200   -- Step Size:  0.1
+ans = 0.070051
+
+Layers: [1024 256 32 10]  -- Iterations: 200   -- Step Size:  1
+ans = 0.066711
+
+Layers: [1024 256 32 10]  -- Iterations: 200   -- Step Size:  10
+ans = 0.067183
+
+Layers: [1024 256 32 10]  -- Iterations: 200   -- Step Size:  100
+ans = 0.068333
+
+Layers: [1024 256 32 10]  -- Iterations: 400   -- Step Size:  0.1
+ans = 0.053344
+
+Layers: [1024 256 32 10]  -- Iterations: 400   -- Step Size:  1
+ans = 0.056449
+
+Layers: [1024 256 32 10]  -- Iterations: 400   -- Step Size:  10
+ans = 0.052987
+
+Layers: [1024 256 32 10]  -- Iterations: 400   -- Step Size:  100
+ans = 0.057647
+
+Layers: [1024 256 32 10]  -- Iterations: 800   -- Step Size:  0.1
+ans = 0.044656
+
+Layers: [1024 256 32 10]  -- Iterations: 800   -- Step Size:  1
+ans = 0.045712
+
+Layers: [1024 256 32 10]  -- Iterations: 800   -- Step Size:  10
+ans = 0.047113
+
+Layers: [1024 256 32 10]  -- Iterations: 800   -- Step Size:  100
+ans = 0.044719
+
+Layers: [1024 64 4 10]  -- Iterations: 100   -- Step Size:  0.1
+ans = 0.1007
+
+Layers: [1024 64 4 10]  -- Iterations: 100   -- Step Size:  1
+ans = 0.098695
+
+Layers: [1024 64 4 10]  -- Iterations: 100   -- Step Size:  10
+ans = 0.1011
+
+Layers: [1024 64 4 10]  -- Iterations: 100   -- Step Size:  100
+ans = 0.1067
+
+Layers: [1024 64 4 10]  -- Iterations: 200   -- Step Size:  0.1
+ans = 0.091673
+
+Layers: [1024 64 4 10]  -- Iterations: 200   -- Step Size:  1
+ans = 0.090061
+
+Layers: [1024 64 4 10]  -- Iterations: 200   -- Step Size:  10
+ans = 0.090247
+
+Layers: [1024 64 4 10]  -- Iterations: 200   -- Step Size:  100
+ans = 0.090417
+
+Layers: [1024 64 4 10]  -- Iterations: 400   -- Step Size:  0.1
+ans = 0.089130
+
+Layers: [1024 64 4 10]  -- Iterations: 400   -- Step Size:  1
+ans = 0.089321
+
+Layers: [1024 64 4 10]  -- Iterations: 400   -- Step Size:  10
+ans = 0.089795
+
+Layers: [1024 64 4 10]  -- Iterations: 400   -- Step Size:  100
+ans = 0.089897
+
+Layers: [1024 64 4 10]  -- Iterations: 800   -- Step Size:  0.1
+ans = 0.088245
+
+Layers: [1024 64 4 10]  -- Iterations: 800   -- Step Size:  1
+ans = 0.088094
+
+Layers: [1024 64 4 10]  -- Iterations: 800   -- Step Size:  10
+ans = 0.088309
+
+Layers: [1024 64 4 10]  -- Iterations: 800   -- Step Size:  100
+ans = 0.088757

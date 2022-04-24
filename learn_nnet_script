@@ -1,0 +1,68 @@
+#!/bin/bash
+
+#Seperate Testing Data into folds
+
+training_data_file="optdigits_tra_trans.dat"
+# training_data_file="test.data"
+test_data_file="optdigits_cv.dat"
+number_of_lines=$(wc -l < $training_data_file)
+# echo $number_of_lines
+number_of_folds=5
+let "lines_per_fold = ($number_of_lines / $number_of_folds) + ($number_of_lines % $number_of_folds > 0)"
+# echo $lines_per_fold
+
+split -l $lines_per_fold $training_data_file "D.dat."
+
+test_fold_data_sets=("D.dat.aa" "D.dat.ab" "D.dat.ac" "D.dat.ad" "D.dat.ae")
+
+iterations=("100" "200" "400" "800")
+step_size=("0.1" "1" "10" "100")
+weight_change_min="1e-4"
+error_rate_min="1e-6"
+
+errors=()
+for iteration in ${iterations[@]}; do
+    for step in ${step_size[@]}; do
+        echo "Layers:" $1 " -- Iterations:" $iteration "  -- Step Size: " $step
+        for fold in $(seq $number_of_folds); do 
+            let "fold_num = ($fold - 1)"
+            # echo "Fold#: " $fold_num 
+
+            #create training dataset
+            training_data_sets=( "${test_fold_data_sets[@]/${test_fold_data_sets[$fold_num]}}" )
+            rm D.dat
+            for test_fold_data_set in ${training_data_sets[@]}; do
+                # echo "Training datasets: " ${test_fold_data_set}
+                cat ${test_fold_data_set} >> "D.dat"
+            done
+            
+            #Create testing dataset
+            cp ${test_fold_data_sets[$fold_num]} "D_cv.dat"
+            
+            sed -e "s/^nunits = .*/nunits = $1;/;s/^maxT = .*/maxT = $iteration;/;s/^alpha = .*/alpha = $step_size;/;s/^change_thresh = .*/change_thresh = $weight_change_min;/;s/^change_err_thresh = .*/change_err_thresh = $error_rate_min;/;" learn_nnet_template.m > learn_nnet.m
+            octave -q learn_nnet.m > /dev/null
+            # cat best_nnet_err_final.dat
+            file_error=$(<best_nnet_err_final.dat)
+            # echo ${file_error[@]}
+            errors+=("${file_error}")
+            # echo ${errors[@]}
+
+            # cat best_nnet_err_final.dat
+        done
+        IFS=' ' read -r -a array_of_errors <<< ${errors[@]}
+        
+        total_error=0
+        for index in "${!array_of_errors[@]}"; do
+            if [[ $index -eq 1 ||  $index -eq 5 || $index -eq 9 || $index -eq 13|| $index -eq 17 ]]; then
+                # echo ${array_of_errors[$index]}
+                total_error=`echo ${array_of_errors[$index]} + $total_error | bc`
+                # echo "interem total error $total_error"
+            fi
+        done
+        # echo "Total: $total_error"
+        average_error=`echo $total_error / 5 | bc`
+        echo $total_error / 5 | octave
+        errors=()   
+    done 
+done
+
