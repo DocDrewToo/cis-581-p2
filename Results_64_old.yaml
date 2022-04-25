@@ -1,0 +1,245 @@
+Layers: [64 10]  -- Iterations: 100   -- Step Size:  0.1
+ans = 0.044070
+
+Layers: [64 10]  -- Iterations: 100   -- Step Size:  1
+ans = 0.046305
+
+Layers: [64 10]  -- Iterations: 100   -- Step Size:  10
+ans = 0.044801
+
+Layers: [64 10]  -- Iterations: 100   -- Step Size:  100
+ans = 0.041512
+
+Layers: [64 10]  -- Iterations: 200   -- Step Size:  0.1
+ans = 0.030353
+
+Layers: [64 10]  -- Iterations: 200   -- Step Size:  1
+
+fatal: caught signal Segmentation fault: 11 -- stopping myself...
+./learn_nnet_script: line 27: 31404 Segmentation fault: 11  octave -q learn_nnet.m > /dev/null
+
+ans = 0.033192
+
+Layers: [64 10]  -- Iterations: 200   -- Step Size:  10
+ans = 0.031080
+
+Layers: [64 10]  -- Iterations: 200   -- Step Size:  100
+ans = 0.031069
+
+Layers: [64 10]  -- Iterations: 400   -- Step Size:  0.1
+ans = 0.023409
+
+Layers: [64 10]  -- Iterations: 400   -- Step Size:  1
+ans = 0.026207
+
+Layers: [64 10]  -- Iterations: 400   -- Step Size:  10
+ans = 0.025467
+
+Layers: [64 10]  -- Iterations: 400   -- Step Size:  100
+ans = 0.024449
+
+Layers: [64 10]  -- Iterations: 800   -- Step Size:  0.1
+ans = 0.020649
+
+Layers: [64 10]  -- Iterations: 800   -- Step Size:  1
+ans = 0.020962
+
+Layers: [64 10]  -- Iterations: 800   -- Step Size:  10
+ans = 0.021331
+
+Layers: [64 10]  -- Iterations: 800   -- Step Size:  100
+ans = 0.021714
+
+Layers: [64 32 10]  -- Iterations: 100   -- Step Size:  0.1
+ans = 0.069763
+
+Layers: [64 32 10]  -- Iterations: 100   -- Step Size:  1
+ans = 0.071995
+
+Layers: [64 32 10]  -- Iterations: 100   -- Step Size:  10
+ans = 0.070069
+
+Layers: [64 32 10]  -- Iterations: 100   -- Step Size:  100
+ans = 0.072798
+
+Layers: [64 32 10]  -- Iterations: 200   -- Step Size:  0.1
+ans = 0.059718
+
+Layers: [64 32 10]  -- Iterations: 200   -- Step Size:  1
+ans = 0.063312
+
+Layers: [64 32 10]  -- Iterations: 200   -- Step Size:  10
+ans = 0.062310
+
+Layers: [64 32 10]  -- Iterations: 200   -- Step Size:  100
+ans = 0.059634
+
+Layers: [64 32 10]  -- Iterations: 400   -- Step Size:  0.1
+ans = 0.048657
+
+Layers: [64 32 10]  -- Iterations: 400   -- Step Size:  1
+ans = 0.051340
+
+Layers: [64 32 10]  -- Iterations: 400   -- Step Size:  10
+ans = 0.053058
+
+Layers: [64 32 10]  -- Iterations: 400   -- Step Size:  100
+ans = 0.048180
+
+Layers: [64 32 10]  -- Iterations: 800   -- Step Size:  0.1
+ans = 0.046488
+
+Layers: [64 32 10]  -- Iterations: 800   -- Step Size:  1
+ans = 0.045094
+
+Layers: [64 32 10]  -- Iterations: 800   -- Step Size:  10
+ans = 0.046661
+
+Layers: [64 32 10]  -- Iterations: 800   -- Step Size:  100
+ans = 0.047188
+
+Layers: [64 4 10]  -- Iterations: 100   -- Step Size:  0.1
+ans = 0.1003
+
+Layers: [64 4 10]  -- Iterations: 100   -- Step Size:  1
+ans = 0.1020
+
+Layers: [64 4 10]  -- Iterations: 100   -- Step Size:  10
+ans = 0.099135
+
+Layers: [64 4 10]  -- Iterations: 100   -- Step Size:  100
+ans = 0.095550
+
+Layers: [64 4 10]  -- Iterations: 200   -- Step Size:  0.1
+ans = 0.090432
+
+Layers: [64 4 10]  -- Iterations: 200   -- Step Size:  1
+ans = 0.090093
+
+Layers: [64 4 10]  -- Iterations: 200   -- Step Size:  10
+ans = 0.089805
+
+Layers: [64 4 10]  -- Iterations: 200   -- Step Size:  100
+ans = 0.088256
+
+Layers: [64 4 10]  -- Iterations: 400   -- Step Size:  0.1
+ans = 0.089167
+
+Layers: [64 4 10]  -- Iterations: 400   -- Step Size:  1
+fatal: caught signal Segmentation fault: 11 -- stopping myself...
+./learn_nnet_script: line 27: 33923 Segmentation fault: 11  octave -q learn_nnet.m > /dev/null
+ans = 0.088574
+
+Layers: [64 4 10]  -- Iterations: 400   -- Step Size:  10
+ans = 0.087328
+
+Layers: [64 4 10]  -- Iterations: 400   -- Step Size:  100
+ans = 0.089035
+
+Layers: [64 4 10]  -- Iterations: 800   -- Step Size:  0.1
+ans = 0.089186
+
+Layers: [64 4 10]  -- Iterations: 800   -- Step Size:  1
+ans = 0.089394
+
+Layers: [64 4 10]  -- Iterations: 800   -- Step Size:  10
+ans = 0.089797
+
+Layers: [64 4 10]  -- Iterations: 800   -- Step Size:  100
+ans = 0.089502
+
+Layers: [64 32 16 10]  -- Iterations: 100   -- Step Size:  0.1
+ans = 0.088025
+
+Layers: [64 32 16 10]  -- Iterations: 100   -- Step Size:  1
+ans = 0.089235
+
+Layers: [64 32 16 10]  -- Iterations: 100   -- Step Size:  10
+ans = 0.088716
+
+Layers: [64 32 16 10]  -- Iterations: 100   -- Step Size:  100
+ans = 0.088585
+
+Layers: [64 32 16 10]  -- Iterations: 200   -- Step Size:  0.1
+ans = 0.086178
+
+Layers: [64 32 16 10]  -- Iterations: 200   -- Step Size:  1
+ans = 0.085658
+
+Layers: [64 32 16 10]  -- Iterations: 200   -- Step Size:  10
+ans = 0.086195
+
+Layers: [64 32 16 10]  -- Iterations: 200   -- Step Size:  100
+ans = 0.086799
+
+Layers: [64 32 16 10]  -- Iterations: 400   -- Step Size:  0.1
+ans = 0.082733
+
+Layers: [64 32 16 10]  -- Iterations: 400   -- Step Size:  1
+ans = 0.083009
+
+Layers: [64 32 16 10]  -- Iterations: 400   -- Step Size:  10
+ans = 0.084626
+
+Layers: [64 32 16 10]  -- Iterations: 400   -- Step Size:  100
+ans = 0.082569
+
+Layers: [64 32 16 10]  -- Iterations: 800   -- Step Size:  0.1
+ans = 0.082186
+
+Layers: [64 32 16 10]  -- Iterations: 800   -- Step Size:  1
+ans = 0.081007
+
+Layers: [64 32 16 10]  -- Iterations: 800   -- Step Size:  10
+ans = 0.076011
+
+Layers: [64 32 16 10]  -- Iterations: 800   -- Step Size:  100
+ans = 0.079568
+
+Layers: [64 16 4 10]  -- Iterations: 100   -- Step Size:  0.1
+ans = 0.096341
+
+Layers: [64 16 4 10]  -- Iterations: 100   -- Step Size:  1
+ans = 0.097204
+
+Layers: [64 16 4 10]  -- Iterations: 100   -- Step Size:  10
+ans = 0.1101
+
+Layers: [64 16 4 10]  -- Iterations: 100   -- Step Size:  100
+ans = 0.096349
+
+Layers: [64 16 4 10]  -- Iterations: 200   -- Step Size:  0.1
+ans = 0.091770
+
+Layers: [64 16 4 10]  -- Iterations: 200   -- Step Size:  1
+ans = 0.090860
+
+Layers: [64 16 4 10]  -- Iterations: 200   -- Step Size:  10
+ans = 0.092629
+
+Layers: [64 16 4 10]  -- Iterations: 200   -- Step Size:  100
+ans = 0.091350
+
+Layers: [64 16 4 10]  -- Iterations: 400   -- Step Size:  0.1
+ans = 0.090064
+
+Layers: [64 16 4 10]  -- Iterations: 400   -- Step Size:  1
+ans = 0.089770
+
+Layers: [64 16 4 10]  -- Iterations: 400   -- Step Size:  10
+ans = 0.089692
+
+Layers: [64 16 4 10]  -- Iterations: 400   -- Step Size:  100
+ans = 0.089897
+
+Layers: [64 16 4 10]  -- Iterations: 800   -- Step Size:  0.1
+ans = 0.089396
+
+Layers: [64 16 4 10]  -- Iterations: 800   -- Step Size:  1
+ans = 0.087779
+
+Layers: [64 16 4 10]  -- Iterations: 800   -- Step Size:  10
+ans = 0.089990
+
+Layers: [64 16 4 10]  -- Iterations: 800   -- Step Size:  100
+ans = 0.089571

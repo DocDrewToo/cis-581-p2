@@ -2,8 +2,12 @@
 
 #Seperate Testing Data into folds
 number_of_error_columns=4
-training_data_file="optdigits_tra_trans.dat"
-# training_data_file="test.data"
+
+# layers=("[64 10]" "[64 32 10]" "[64 4 10]" "[64 32 16 10]" "[64 16 4 10]")
+layers=("[1024 10]" "[1024 512 10]" "[1024 128 10]" "[1024 4 10]" "[1024 512 64 10]" "[1024 256 32 10]" "[1024 64 4 10]")
+# training_data_file="optdigits_tra_trans.dat"
+training_data_file="optdigits_tra.dat"
+
 test_data_file="optdigits_cv.dat"
 number_of_lines=$(wc -l < $training_data_file)
 # echo $number_of_lines
@@ -20,54 +24,56 @@ step_size=("0.1" "1" "10" "100")
 weight_change_min="1e-4"
 error_rate_min="1e-6"
 
-# layers=()
+output_results="results_1024.yaml"
+rm $output_results
+for (( layer_index = 0; layer_index < ${#layers[@]}; layer_index++ )) ; do
+    # echo ${layers[$layer_index]}
+    errors=()
+    for iteration in ${iterations[@]}; do
+        for step in ${step_size[@]}; do
+            echo "Layers:" ${layers[$layer_index]} " -- Iterations:" $iteration "  -- Step Size: " $step >> $output_results
+            file_error_array=()
+            for fold in $(seq $number_of_folds); do 
+                let "fold_num = ($fold - 1)"
+                # echo "Fold#: " $fold_num 
 
-errors=()
-for iteration in ${iterations[@]}; do
-    for step in ${step_size[@]}; do
-        echo "Layers:" $1 " -- Iterations:" $iteration "  -- Step Size: " $step
-        file_error_array=()
-        for fold in $(seq $number_of_folds); do 
-            let "fold_num = ($fold - 1)"
-            # echo "Fold#: " $fold_num 
-
-            #create training dataset
-            training_data_sets=( "${test_fold_data_sets[@]/${test_fold_data_sets[$fold_num]}}" )
-            rm D.dat
-            for test_fold_data_set in ${training_data_sets[@]}; do
-                # echo "Training datasets: " ${test_fold_data_set}
-                cat ${test_fold_data_set} >> "D.dat"
+                #create training dataset
+                training_data_sets=( "${test_fold_data_sets[@]/${test_fold_data_sets[$fold_num]}}" )
+                rm D.dat
+                for test_fold_data_set in ${training_data_sets[@]}; do
+                    # echo "Training datasets: " ${test_fold_data_set}
+                    cat ${test_fold_data_set} >> "D.dat"
+                done
+                
+                #Create testing dataset
+                cp ${test_fold_data_sets[$fold_num]} "D_cv.dat"
+                
+                sed -e "s/^nunits = .*/nunits = ${layers[$layer_index]};/;s/^maxT = .*/maxT = $iteration;/;s/^alpha = .*/alpha = $step_size;/;s/^change_thresh = .*/change_thresh = $weight_change_min;/;s/^change_err_thresh = .*/change_err_thresh = $error_rate_min;/;" learn_nnet_template.m > learn_nnet.m
+                octave -q learn_nnet.m &> /dev/null
+                file_error=$(<best_nnet_err_final.dat)
+                # echo $file_error
+                file_error_array+=($file_error)
             done
-            
-            #Create testing dataset
-            cp ${test_fold_data_sets[$fold_num]} "D_cv.dat"
-            
-            sed -e "s/^nunits = .*/nunits = $1;/;s/^maxT = .*/maxT = $iteration;/;s/^alpha = .*/alpha = $step_size;/;s/^change_thresh = .*/change_thresh = $weight_change_min;/;s/^change_err_thresh = .*/change_err_thresh = $error_rate_min;/;" learn_nnet_template.m > learn_nnet.m
-            octave -q learn_nnet.m &> /dev/null
-            file_error=$(<best_nnet_err_final.dat)
-            # echo $file_error
-            file_error_array+=($file_error)
-        done
-        # for value in "${file_error_array[@]}"; do
-        #     echo $value
-        # done
+            # for value in "${file_error_array[@]}"; do
+            #     echo $value
+            # done
 
-        error_description=("train_func: " "test_func:  " "train_rate: " "test_rate:  ")
-
-        for column_num in $(seq $number_of_error_columns); do 
-            let "column = ($column_num - 1)"
-            error_total=0 
-            for fold_num in $(seq $number_of_folds); do  
-                let "fold = ($fold_num - 1)"
-                let "fold_iteration = ($fold * 4)"
-                let "indx_of_error = ($fold_iteration + $column)"
-                # echo "indx_of_error $indx_of_error"
-                error_total=`echo ${file_error_array[$indx_of_error]} + $error_total | bc`
+            error_description=("train_func: " "test_func:  " "train_rate: " "test_rate:  ")
+            all_errors=""
+            for column_num in $(seq $number_of_error_columns); do 
+                let "column = ($column_num - 1)"
+                error_total=0 
+                for fold_num in $(seq $number_of_folds); do  
+                    let "fold = ($fold_num - 1)"
+                    let "fold_iteration = ($fold * 4)"
+                    let "indx_of_error = ($fold_iteration + $column)"
+                    # echo "indx_of_error $indx_of_error"
+                    error_total=`echo ${file_error_array[$indx_of_error]} + $error_total | bc`
+                done
+                average_error=`echo $error_total / $number_of_folds | octave`
+                all_errors="$all_errors ${error_description[$column]} $average_error" 
             done
-            echo "${error_description[$column]}"  
-            echo $error_total / $number_of_folds | octave
-        done
-        exit
-    done 
+            echo $all_errors >> $output_results
+        done 
+    done
 done
-
