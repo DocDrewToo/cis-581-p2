@@ -17,7 +17,8 @@ let "lines_per_fold = ($number_of_lines / $number_of_folds) + ($number_of_lines 
 
 split -l $lines_per_fold $training_data_file "D.dat."
 
-test_fold_data_sets=("D.dat.aa" "D.dat.ab" "D.dat.ac" "D.dat.ad" "D.dat.ae")
+# test_fold_data_sets=("D.dat.aa" "D.dat.ab" "D.dat.ac" "D.dat.ad" "D.dat.ae")
+test_fold_data_sets=("D.dat.aa" "D.dat.ab" "D.dat.ac")
 
 iterations=("100" "200" "400" "800")
 step_size=("0.1" "1" "10" "100")

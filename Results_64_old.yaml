@@ -14,10 +14,6 @@ Layers: [64 10]  -- Iterations: 200   -- Step Size:  0.1
 ans = 0.030353
 
 Layers: [64 10]  -- Iterations: 200   -- Step Size:  1
-
-fatal: caught signal Segmentation fault: 11 -- stopping myself...
-./learn_nnet_script: line 27: 31404 Segmentation fault: 11  octave -q learn_nnet.m > /dev/null
-
 ans = 0.033192
 
 Layers: [64 10]  -- Iterations: 200   -- Step Size:  10
@@ -39,7 +35,7 @@ Layers: [64 10]  -- Iterations: 400   -- Step Size:  100
 ans = 0.024449
 
 Layers: [64 10]  -- Iterations: 800   -- Step Size:  0.1
-ans = 0.020649
+!!!!!!!!!!!!!!!! ans = 0.020649
 
 Layers: [64 10]  -- Iterations: 800   -- Step Size:  1
 ans = 0.020962
@@ -126,8 +122,6 @@ Layers: [64 4 10]  -- Iterations: 400   -- Step Size:  0.1
 ans = 0.089167
 
 Layers: [64 4 10]  -- Iterations: 400   -- Step Size:  1
-fatal: caught signal Segmentation fault: 11 -- stopping myself...
-./learn_nnet_script: line 27: 33923 Segmentation fault: 11  octave -q learn_nnet.m > /dev/null
 ans = 0.088574
 
 Layers: [64 4 10]  -- Iterations: 400   -- Step Size:  10

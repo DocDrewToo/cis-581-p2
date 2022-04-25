@@ -1,6 +1,6 @@
 
 load 'X.dat'
-nunits = [1024 64 10];
+nunits = [64 10];
 
 nnet = make_nnet_beta ( nunits , 'sigmoid' , 'deriv_sigmoid' , ...
                         'squared_error' , 'deriv_squared_error' ) ;
