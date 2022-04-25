@@ -27,7 +27,7 @@ train_func: ans = 9.7933e-03 test_func: ans = 0.018343 train_rate: ans = 0.03474
 Layers: [64 10]  -- Iterations: 800   -- Step Size:  1
 train_func: ans = 9.8950e-03 test_func: ans = 0.018419 train_rate: ans = 0.034589 test_rate: ans = 0.064622
 Layers: [64 10]  -- Iterations: 800   -- Step Size:  10
-train_func: ans = 0.010007 test_func: ans = 0.017599 train_rate: ans = 0.033457 test_rate: ans = 0.061520
+#!!!! train_func: ans = 0.010007 test_func: ans = 0.017599 train_rate: ans = 0.033457 test_rate: ans = 0.061520
 Layers: [64 10]  -- Iterations: 800   -- Step Size:  100
 train_func: ans = 0.057651 test_func: ans = 0.066192 train_rate: ans = 0.2837 test_rate: ans = 0.3210
 Layers: [64 32 10]  -- Iterations: 100   -- Step Size:  0.1
@@ -137,7 +137,7 @@ train_func: ans = 0.098592 test_func: ans = 0.098420 train_rate: ans = 0.8773 te
 Layers: [64 16 4 10]  -- Iterations: 200   -- Step Size:  0.1
 train_func: ans = 0.1001 test_func: ans = 0.1001 train_rate: ans = 0.8961 test_rate: ans = 0.8935
 Layers: [64 16 4 10]  -- Iterations: 200   -- Step Size:  1
-train_func: ans = 0.091746 test_func: ans = 0.091892 train_rate: ans = 0.8975 test_rate: ans = 0.9095
+!!!! train_func: ans = 0.091746 test_func: ans = 0.091892 train_rate: ans = 0.8975 test_rate: ans = 0.9095
 Layers: [64 16 4 10]  -- Iterations: 200   -- Step Size:  10
 train_func: ans = 0.091705 test_func: ans = 0.091782 train_rate: ans = 0.8468 test_rate: ans = 0.8583
 Layers: [64 16 4 10]  -- Iterations: 200   -- Step Size:  100
