@@ -6,9 +6,9 @@ change_err_thresh = 1e-6;
 
 load 'D.dat'
 load 'D_cv.dat'
-nunits = [1024 10];
-maxT = 400;
-alpha = 0.1;
+nunits = [64 10];
+maxT = 800;
+alpha = 1;
 data = D ;
 data_cv = D_cv ;
 

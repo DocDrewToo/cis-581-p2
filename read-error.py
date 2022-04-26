@@ -18,7 +18,8 @@ iterations = []
 for iteration in range(1, number_of_iterations+1):
     iterations.append(iteration)
 
-plt.plot(test_error)
+plt.plot(test_error, label="Test")
+plt.plot(train_error, label="Train")
 # plt.xlabel('Iterations')
-# plt.ylabel('Test Error')
+# plt.ylabel('Error')
 plt.show()

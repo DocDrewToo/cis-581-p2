@@ -25,7 +25,7 @@ train_func: ans = 0.014585 test_func: ans = 0.025430 train_rate: ans = 0.053258 
 Layers: [64 10]  -- Iterations: 800   -- Step Size:  0.1
 train_func: ans = 9.1817e-03 test_func: ans = 0.022134 train_rate: ans = 0.033610 test_rate: ans = 0.080665
 Layers: [64 10]  -- Iterations: 800   -- Step Size:  1
-train_func: ans = 9.2513e-03 test_func: ans = 0.021847 train_rate: ans = 0.030508 test_rate: ans = 0.086360
+# train_func: ans = 9.2513e-03 test_func: ans = 0.021847 train_rate: ans = 0.030508 test_rate: ans = 0.086360
 Layers: [64 10]  -- Iterations: 800   -- Step Size:  10
 train_func: ans = 9.8660e-03 test_func: ans = 0.021862 train_rate: ans = 0.032316 test_rate: ans = 0.089972
 Layers: [64 10]  -- Iterations: 800   -- Step Size:  100
